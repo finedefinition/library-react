@@ -12,7 +12,7 @@ export const Carousel = () => {
 
     useEffect(() => {
         const fetchBooks = async () => {
-            const baseUrl: string = "https://spring-boot-library-production.up.railway.app/api/books";
+            const baseUrl: string = "http://libraryv20-env.eba-5uumgcrz.eu-north-1.elasticbeanstalk.com/api/books";
 
             const url: string = `${baseUrl}?page=0&size=9`;
             const response = await fetch(url);
