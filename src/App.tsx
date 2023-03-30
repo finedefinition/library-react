@@ -6,11 +6,13 @@ import {HomePage} from "./layouts/HomePage/HomePage";
 import {SearchBook} from "./layouts/SearchBooksPage/components/SearchBook";
 import {SearchBooksPage} from "./layouts/SearchBooksPage/SearchBookPage";
 import {Redirect, Route, Switch} from "react-router-dom";
+import {BookCheckoutPage} from "./layouts/BookCheckoutPage/BookCheckOutPage";
 
 export const App = () => {
     return (
-        <div>
+        <div  className='d-flex flex-column min-vh-100'>
             <Navbar/>
+            <div className='flex-grow-1'>
             <Switch>
                 <Route path='/' exact>
                     <Redirect to='/home'/>
@@ -21,7 +23,11 @@ export const App = () => {
                 <Route path='/search'>
                     <SearchBooksPage/>
                 </Route>
+                <Route path='/checkout/:bookId'>
+                    <BookCheckoutPage/>
+                </Route>
             </Switch>
+            </div>
             <Footer/>
         </div>
     );
