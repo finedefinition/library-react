@@ -10,7 +10,6 @@ export const HomePage = () => {
             <Carousel/>
             <Heros/>
             <LibraryServices/>
-            <a href="https://u24.gov.ua/" target="_blank" rel="noopener noreferrer">UNITED24</a>
         </>
     );
 }
