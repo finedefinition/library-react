@@ -1,10 +1,17 @@
 # Getting Started with Create React App
 
+## OKTA
+### Install OKTA dependencies
 
-## Install OKTA dependencies
+#### `npm install @okta/okta-signin-widget@6.3.3`
+#### `npm install @okta/okta-react@6.4.3`
+## Stripe
+### Install Stripe dependencies
+#### ` npm install stripe@9.14.0`
+#### `npm install @stripe/react-stripe-js@1.9.0`
+#### `npm install @stripe/stripe-js@1.32.0`
 
-### `npm install @okta/okta-signin-widget@6.3.3`
-### `npm install @okta/okta-react@6.4.3`
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
